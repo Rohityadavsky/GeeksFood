@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 const Navbar = () => {
     return (
         <div>
@@ -10,12 +11,12 @@ const Navbar = () => {
                 </div>
                 <div class="hidden sm:ml-6 sm:block">
                 <div class="flex space-x-8">
-                    <a href="/" class="self-center text-2xl font-semibold whitesapce-nowrap text-white" aria-current="page">GeeksFoods</a>
-                    <a href="/" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Home</a>
-                    <a href="/Quotes" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Quotes</a>
-                    <a href="/Resturants" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Resturants</a>
-                    <a href="/Food" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Food</a>
-                    <a href="/Contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</a>
+                    <Link to="/" class="self-center text-2xl font-semibold whitesapce-nowrap text-white" aria-current="page">GeeksFoods</Link>
+                    <Link to="/" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Home</Link>
+                    <Link to="/Quote" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Quotes</Link>
+                    <Link to="/Resturants" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Resturants</Link>
+                    <Link to="/Food" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Food</Link>
+                    <Link to="/Contact" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact</Link>
                 </div>
                 </div>
             </div>
